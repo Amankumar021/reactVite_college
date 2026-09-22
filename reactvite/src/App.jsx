@@ -7,6 +7,7 @@ import ICard from './component/ICard'
 import Gallery from './component/Gallery'
 import ReactHook from './component/ReactHook'
 import Imagemanipulation from './component/Imagemanipulation'
+import UseEffect from './component/UseEffect'
 function App() {
 
 
@@ -15,7 +16,8 @@ function App() {
     <div>
       {/* <Gallery /> */}
       {/* <ReactHook /> */}
-      <Imagemanipulation />
+      {/* <Imagemanipulation /> */}
+      <UseEffect />
     </div>
   )
 }
