@@ -15,22 +15,23 @@ import Registration from './component/Registration'
 import Dashbaord from './component/Dashbaord'
 function App() {
 
-
+const [data, setdata]= useState();
 
   return (
     <div>
 <BrowserRouter>
 <Routes>
-<Route path='/' element={<Home />}></Route>
+<Route path='/' element={<Home />}>
 <Route path='/login' element={<Login />}></Route>
-<Route path='/register' element={<Registration />}></Route>
+<Route path='/register' element={<Registration  regData={setdata}/>}></Route>
+</Route>
 <Route path='/dashboard' element={<Dashbaord />}></Route>
 
 </Routes>
 
 </BrowserRouter>
 
-     
+    {JSON.stringify(data)}
     </div>
   )
 }
