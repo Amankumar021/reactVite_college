@@ -11,7 +11,7 @@ useEffect(()=>{
 
    async function fetchData(){
         try{
-             const data=await fetch('https://fakestoreapi.com/products');
+             const data=await fetch('https://dummyjson.com/products');
               const jsonData=await data.json();
               console.log(jsonData)
               setProduct(jsonData);
